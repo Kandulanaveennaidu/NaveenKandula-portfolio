@@ -1,0 +1,192 @@
+.skills-section {
+  background: var(--dark-bg);
+  position: relative;
+}
+
+/* Filter Buttons */
+.skills-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 28px;
+  border-radius: 50px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--gradient-1);
+  color: white;
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(108, 99, 255, 0.3);
+}
+
+/* Skills Grid */
+.skills-grid {
+  margin-top: 30px;
+}
+
+.skill-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: var(--transition);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+  border-color: rgba(108, 99, 255, 0.3);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.skill-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  font-size: 1.8rem;
+  transition: var(--transition);
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.skill-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.skill-level {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Progress Bar */
+.skill-progress .progress {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress .progress-bar {
+  background: var(--skill-color, var(--primary-color));
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Skills Summary */
+.skills-summary {
+  background: var(--card-bg);
+  border-radius: 25px;
+  padding: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 40px;
+}
+
+.skills-summary h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.competencies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.competency-item {
+  text-align: center;
+  padding: 25px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+.competency-item:hover {
+  background: rgba(108, 99, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.competency-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.competency-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.competency-item p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .competencies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-summary {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .competencies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-filter {
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}

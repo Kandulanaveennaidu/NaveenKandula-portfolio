@@ -1,0 +1,130 @@
+.custom-navbar {
+  padding: 20px 0;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+
+.custom-navbar.scrolled {
+  padding: 15px 0;
+  background: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand-custom {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-primary) !important;
+}
+
+.brand-text {
+  font-family: "Raleway", sans-serif;
+}
+
+.brand-highlight {
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.2rem;
+}
+
+.nav-link-custom {
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+  padding: 10px 15px !important;
+  margin: 0 5px;
+  border-radius: 10px;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: var(--text-primary) !important;
+  background: rgba(108, 99, 255, 0.1);
+}
+
+.nav-icon {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.nav-text {
+  font-size: 0.9rem;
+}
+
+/* Mobile Toggle */
+.navbar-toggler-custom {
+  border: none;
+  padding: 10px;
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-custom:focus {
+  box-shadow: none !important;
+}
+
+.toggler-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 2px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.toggler-icon::before,
+.toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+.toggler-icon::before {
+  top: -8px;
+}
+
+.toggler-icon::after {
+  bottom: -8px;
+}
+
+.navbar-toggler-custom[aria-expanded="true"] .toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler-custom[aria-expanded="true"] .toggler-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.navbar-toggler-custom[aria-expanded="true"] .toggler-icon::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+/* Mobile Menu */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(18, 18, 26, 0.98);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+  }
+
+  .nav-link-custom {
+    padding: 15px 20px !important;
+    margin: 5px 0;
+  }
+}
