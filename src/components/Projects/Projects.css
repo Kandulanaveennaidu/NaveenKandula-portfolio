@@ -37,11 +37,11 @@
 
 .project-image {
   position: relative;
-  height: 200px;
+  height: 220px;
   background: linear-gradient(
     135deg,
-    rgba(108, 99, 255, 0.2) 0%,
-    rgba(245, 0, 87, 0.2) 100%
+    rgba(108, 99, 255, 0.1) 0%,
+    rgba(245, 0, 87, 0.1) 100%
   );
   display: flex;
   align-items: center;
@@ -49,13 +49,16 @@
   overflow: hidden;
 }
 
-.project-emoji {
-  font-size: 5rem;
+.project-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
   transition: var(--transition);
 }
 
-.project-card:hover .project-emoji {
-  transform: scale(1.2);
+.project-card:hover .project-screenshot {
+  transform: scale(1.05);
 }
 
 .project-overlay {
@@ -199,8 +202,12 @@
   color: var(--text-primary);
 }
 
-.modal-emoji {
-  font-size: 2rem;
+.modal-project-img {
+  width: 50px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgba(108, 99, 255, 0.3);
 }
 
 .project-modal .btn-close {

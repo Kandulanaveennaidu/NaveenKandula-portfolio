@@ -7,17 +7,17 @@ import './About.css';
 
 const About = () => {
     const stats = [
-        { icon: <FaCode />, count: 5, suffix: '+', label: 'Years Experience' },
-        { icon: <FaLaptopCode />, count: 50, suffix: '+', label: 'Projects Completed' },
-        { icon: <FaUsers />, count: 30, suffix: '+', label: 'Happy Clients' },
-        { icon: <FaCoffee />, count: 1000, suffix: '+', label: 'Cups of Coffee' },
+        { icon: <FaCode />, count: 3, suffix: '+', label: 'Years Experience' },
+        { icon: <FaLaptopCode />, count: 10, suffix: '+', label: 'Projects Completed' },
+        { icon: <FaUsers />, count: 50000, suffix: '+', label: 'Users Served' },
+        { icon: <FaCoffee />, count: 45, suffix: '%', label: 'Efficiency Improved' },
     ];
 
     const highlights = [
-        { icon: <HiLightningBolt />, title: 'Fast Learner', desc: 'Quick to adapt to new technologies' },
-        { icon: <HiAcademicCap />, title: 'Detail Oriented', desc: 'Precision in every line of code' },
-        { icon: <HiGlobe />, title: 'Global Perspective', desc: 'Experience with international teams' },
-        { icon: <HiCube />, title: 'Problem Solver', desc: 'Creative solutions for complex challenges' },
+        { icon: <HiLightningBolt />, title: 'Performance Optimizer', desc: 'Improved app performance by 30%' },
+        { icon: <HiAcademicCap />, title: 'API Expert', desc: 'Third-party API integrations specialist' },
+        { icon: <HiGlobe />, title: 'Scalable Solutions', desc: '100,000+ daily interactions handled' },
+        { icon: <HiCube />, title: 'CI/CD Expert', desc: 'Reduced deployment times by 60%' },
     ];
 
     return (
@@ -34,10 +34,10 @@ const About = () => {
                         <div className="about-image-wrapper">
                             <div className="about-image-container">
                                 <div className="about-avatar">
-                                    <span className="about-initials">AK</span>
+                                    <img src="/image.png" alt="Naveen Kandula" className="about-image" />
                                 </div>
                                 <div className="experience-badge">
-                                    <span className="exp-number">5+</span>
+                                    <span className="exp-number">3+</span>
                                     <span className="exp-text">Years of Experience</span>
                                 </div>
                             </div>
@@ -49,23 +49,23 @@ const About = () => {
                     <Col lg={7} data-aos="fade-left">
                         <div className="about-content">
                             <h3 className="about-greeting">
-                                Hello! I'm <span className="gradient-text">Aishwarya</span>
+                                Hello! I'm <span className="gradient-text">Kandula Naveen</span>
                             </h3>
                             <p className="about-text">
-                                I am a dedicated and results-driven Full Stack Developer with over 5 years of comprehensive
+                                I am a dynamic and results-driven Full Stack Developer with over 3 years of comprehensive
                                 experience in designing, developing, and deploying scalable web applications. My expertise
-                                spans across Java, Spring Boot, React.js, and cloud technologies including AWS and Azure.
+                                spans across React.js, Redux, Node.js, MySQL, Docker, and AWS cloud technologies.
                             </p>
                             <p className="about-text">
                                 With a strong foundation in both frontend and backend development, I specialize in building
-                                robust microservices architecture, implementing CI/CD pipelines, and creating intuitive user
+                                enterprise-grade applications, implementing CI/CD pipelines, and creating intuitive user
                                 interfaces. I am passionate about writing clean, maintainable code and following best practices
-                                in software development.
+                                that improve performance by up to 45%.
                             </p>
                             <p className="about-text">
-                                Throughout my career, I have successfully collaborated with cross-functional teams to deliver
-                                high-quality software solutions that meet business requirements while ensuring optimal performance
-                                and user experience.
+                                Throughout my career at Vitelglobal Communication and ATTPL Group, I have successfully
+                                collaborated with cross-functional teams to deliver high-quality software solutions including
+                                WebRTC platforms supporting 50,000+ concurrent users with 99.9% uptime.
                             </p>
 
                             <div className="highlights-grid">

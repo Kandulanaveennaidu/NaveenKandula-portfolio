@@ -28,9 +28,9 @@ const Hero = () => {
     }, []);
 
     const socialLinks = [
-        { icon: <FaGithub />, url: 'https://github.com/aishwarya', label: 'GitHub' },
-        { icon: <FaLinkedin />, url: 'https://linkedin.com/in/aishwarya', label: 'LinkedIn' },
-        { icon: <FaEnvelope />, url: 'mailto:aishwarya@gmail.com', label: 'Email' },
+        { icon: <FaGithub />, url: 'https://github.com/Kandulanaveennaidu', label: 'GitHub' },
+        { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/kandulanaveen1/', label: 'LinkedIn' },
+        { icon: <FaEnvelope />, url: 'mailto:kandulanaveennaidu017@gmail.com', label: 'Email' },
     ];
 
     return (
@@ -52,7 +52,7 @@ const Hero = () => {
                         </div>
 
                         <h1 className="hero-title">
-                            Hi, I'm <span className="gradient-text">Aishwarya</span>
+                            Hi, I'm <span className="gradient-text">Kandula Naveen</span>
                         </h1>
 
                         <h2 className="hero-subtitle">
@@ -60,11 +60,11 @@ const Hero = () => {
                                 <ReactTyped
                                     strings={[
                                         'Full Stack Developer',
-                                        'Java Developer',
                                         'React.js Expert',
-                                        'Spring Boot Developer',
-                                        'UI/UX Enthusiast',
-                                        'Cloud Computing Enthusiast'
+                                        'Node.js Developer',
+                                        'WebRTC Specialist',
+                                        'API Integration Expert',
+                                        'Performance Optimizer'
                                     ]}
                                     typeSpeed={50}
                                     backSpeed={30}
@@ -75,8 +75,8 @@ const Hero = () => {
                         </h2>
 
                         <p className="hero-description">
-                            Passionate Full Stack Developer with expertise in Java, Spring Boot, React.js, and cloud technologies.
-                            I transform complex problems into elegant, scalable solutions that drive business success.
+                            Dynamic React.js Full Stack Developer with 3+ years of experience specializing in React.js, Node.js, and modern web technologies.
+                            I architect scalable applications and deliver user-centric solutions that improve operational efficiency by up to 45%.
                         </p>
 
                         <div className="hero-buttons">
@@ -123,7 +123,7 @@ const Hero = () => {
                             <div className="hero-image-bg"></div>
                             <div className="hero-avatar">
                                 <div className="avatar-circle">
-                                    <span className="avatar-initials">AK</span>
+                                    <img src="/image.png" alt="Naveen Kandula" className="avatar-image" />
                                 </div>
                                 <div className="avatar-ring"></div>
                                 <div className="avatar-ring ring-2"></div>
@@ -133,12 +133,12 @@ const Hero = () => {
                                 <span>React.js</span>
                             </div>
                             <div className="floating-card card-2">
-                                <span className="card-icon">☕</span>
-                                <span>Java</span>
+                                <span className="card-icon">🟢</span>
+                                <span>Node.js</span>
                             </div>
                             <div className="floating-card card-3">
-                                <span className="card-icon">🚀</span>
-                                <span>Spring Boot</span>
+                                <span className="card-icon">🐳</span>
+                                <span>Docker</span>
                             </div>
                         </div>
                     </Col>

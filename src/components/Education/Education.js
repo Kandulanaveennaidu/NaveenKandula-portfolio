@@ -7,32 +7,17 @@ const Education = () => {
     const educationData = [
         {
             id: 1,
-            degree: "Master's in Computer Science",
-            institution: 'University of Technology',
-            location: 'Hyderabad, India',
-            duration: '2017 - 2019',
-            grade: 'CGPA: 8.5/10',
-            description: 'Specialized in Software Engineering and Cloud Computing. Completed thesis on Microservices Architecture Optimization.',
+            degree: "Bachelor of Commerce",
+            institution: 'Osmania University',
+            location: 'Hyderabad, Telangana',
+            duration: 'Jun 2019 - May 2023',
+            grade: 'Accounting and Finance',
+            description: 'Specialized in Accounting and Finance with a strong foundation in business principles, financial management, and analytical skills that complement technical expertise.',
             achievements: [
-                'Graduate Research Assistant',
-                'Published 2 research papers',
-                'Dean\'s List for Academic Excellence',
-                'Best Project Award - Cloud Computing',
-            ],
-        },
-        {
-            id: 2,
-            degree: "Bachelor's in Computer Science",
-            institution: 'National Institute of Technology',
-            location: 'Bangalore, India',
-            duration: '2013 - 2017',
-            grade: 'CGPA: 8.2/10',
-            description: 'Focused on core computer science fundamentals, data structures, algorithms, and software development methodologies.',
-            achievements: [
-                'Technical Club President',
-                'Winner - National Coding Competition',
-                'Completed 5+ internship projects',
-                'Student Ambassador',
+                'Strong foundation in business analytics',
+                'Financial data analysis and reporting',
+                'Project management fundamentals',
+                'Team collaboration and leadership',
             ],
         },
     ];
@@ -90,18 +75,18 @@ const Education = () => {
                 <Row className="mt-5">
                     <Col lg={12} data-aos="fade-up">
                         <div className="courses-section">
-                            <h3>Relevant Coursework</h3>
+                            <h3>Key Skills Developed</h3>
                             <div className="courses-grid">
-                                <div className="course-item">Data Structures & Algorithms</div>
-                                <div className="course-item">Database Management Systems</div>
-                                <div className="course-item">Software Engineering</div>
-                                <div className="course-item">Cloud Computing</div>
-                                <div className="course-item">Distributed Systems</div>
-                                <div className="course-item">Machine Learning</div>
-                                <div className="course-item">Computer Networks</div>
-                                <div className="course-item">Operating Systems</div>
-                                <div className="course-item">Web Technologies</div>
-                                <div className="course-item">Cybersecurity</div>
+                                <div className="course-item">Web Development</div>
+                                <div className="course-item">React.js & Redux</div>
+                                <div className="course-item">Node.js & Express</div>
+                                <div className="course-item">Database Management</div>
+                                <div className="course-item">RESTful API Design</div>
+                                <div className="course-item">Cloud Computing (AWS)</div>
+                                <div className="course-item">DevOps & CI/CD</div>
+                                <div className="course-item">Performance Optimization</div>
+                                <div className="course-item">Agile Methodologies</div>
+                                <div className="course-item">UI/UX Principles</div>
                             </div>
                         </div>
                     </Col>

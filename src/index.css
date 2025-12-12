@@ -17,6 +17,23 @@
   --box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   --box-shadow-hover: 0 20px 60px rgba(108, 99, 255, 0.2);
   --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --input-bg: #1a1a25;
+  --input-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Light Theme Variables */
+[data-theme="light"] {
+  --dark-bg: #f0f2f5;
+  --darker-bg: #ffffff;
+  --card-bg: #ffffff;
+  --card-bg-hover: #f8f9fa;
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a6a;
+  --text-muted: #6c6c8a;
+  --box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  --box-shadow-hover: 0 20px 60px rgba(108, 99, 255, 0.15);
+  --input-bg: #f8f9fa;
+  --input-border: rgba(0, 0, 0, 0.1);
 }
 
 * {

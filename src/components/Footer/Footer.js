@@ -20,9 +20,9 @@ const Footer = () => {
     ];
 
     const socialLinks = [
-        { icon: <FaGithub />, url: 'https://github.com/aishwarya', label: 'GitHub' },
-        { icon: <FaLinkedin />, url: 'https://linkedin.com/in/aishwarya', label: 'LinkedIn' },
-        { icon: <FaEnvelope />, url: 'mailto:aishwarya@gmail.com', label: 'Email' },
+        { icon: <FaGithub />, url: 'https://github.com/Kandulanaveennaidu', label: 'GitHub' },
+        { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/kandulanaveen1/', label: 'LinkedIn' },
+        { icon: <FaEnvelope />, url: 'mailto:kandulanaveennaidu017@gmail.com', label: 'Email' },
     ];
 
     return (
@@ -33,7 +33,7 @@ const Footer = () => {
                         <Col lg={4} md={6} className="mb-4 mb-lg-0">
                             <div className="footer-brand">
                                 <h3>
-                                    <span className="brand-highlight">A</span>ishwarya
+                                    <span className="brand-highlight">K</span>andula Naveen
                                 </h3>
                                 <p>
                                     Full Stack Developer passionate about creating impactful
@@ -99,11 +99,11 @@ const Footer = () => {
                                 </div>
                                 <div className="contact-item">
                                     <FaEnvelope />
-                                    <span>aishwarya@gmail.com</span>
+                                    <span>kandulanaveennaidu017@gmail.com</span>
                                 </div>
                                 <div className="contact-item">
                                     <FaPhone />
-                                    <span>+91 98765 43210</span>
+                                    <span>+91 9705627977</span>
                                 </div>
                             </div>
                         </Col>
@@ -116,13 +116,12 @@ const Footer = () => {
                     <Row className="align-items-center">
                         <Col md={6} className="text-center text-md-start">
                             <p className="copyright">
-                                © {currentYear} Aishwarya. All Rights Reserved.
+                                © {currentYear} Kandula Naveen. All Rights Reserved.
                             </p>
                         </Col>
                         <Col md={6} className="text-center text-md-end">
                             <p className="made-with">
-                                Made with <FaHeart className="heart-icon" /> using React.js
-                                <FaCode className="code-icon" />
+                                Designed & Developed by <strong>Naveen Kandula</strong> with <FaHeart className="heart-icon" /> & <FaCode className="code-icon" /> using React.js
                             </p>
                         </Col>
                     </Row>

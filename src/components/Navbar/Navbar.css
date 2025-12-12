@@ -127,4 +127,16 @@
     padding: 15px 20px !important;
     margin: 5px 0;
   }
+
+  .nav-theme-toggle {
+    margin-top: 15px;
+    padding: 10px 20px;
+  }
+}
+
+/* Theme Toggle in Navbar */
+.nav-theme-toggle {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
 }

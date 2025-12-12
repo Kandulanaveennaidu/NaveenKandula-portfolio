@@ -49,6 +49,13 @@
   font-family: "Raleway", sans-serif;
 }
 
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
 .experience-badge {
   position: absolute;
   bottom: -20px;

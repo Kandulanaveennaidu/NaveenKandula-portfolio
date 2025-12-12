@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Container, Row, Col, Form, Alert } from 'react-bootstrap';
 import {
     FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub,
     FaPaperPlane, FaUser, FaComment
 } from 'react-icons/fa';
 import { HiSparkles } from 'react-icons/hi';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact = () => {
+    const formRef = useRef();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -15,19 +17,25 @@ const Contact = () => {
         message: '',
     });
     const [status, setStatus] = useState({ type: '', message: '' });
+    const [isLoading, setIsLoading] = useState(false);
+
+    // EmailJS Configuration - You need to set these up at emailjs.com
+    const EMAILJS_SERVICE_ID = 'service_vsy6abj'; // EmailJS service ID
+    const EMAILJS_TEMPLATE_ID = 'template_4bqabmn'; // EmailJS template ID
+    const EMAILJS_PUBLIC_KEY = 'J3VCkQi1HBSmV8NCC'; // EmailJS public key
 
     const contactInfo = [
         {
             icon: <FaEnvelope />,
             title: 'Email',
-            value: 'aishwarya@gmail.com',
-            link: 'mailto:aishwarya@gmail.com',
+            value: 'kandulanaveennaidu017@gmail.com',
+            link: 'mailto:kandulanaveennaidu017@gmail.com',
         },
         {
             icon: <FaPhone />,
             title: 'Phone',
-            value: '+91 98765 43210',
-            link: 'tel:+919876543210',
+            value: '+91 9705627977',
+            link: 'tel:+919705627977',
         },
         {
             icon: <FaMapMarkerAlt />,
@@ -38,9 +46,9 @@ const Contact = () => {
     ];
 
     const socialLinks = [
-        { icon: <FaLinkedin />, url: 'https://linkedin.com/in/aishwarya', label: 'LinkedIn' },
-        { icon: <FaGithub />, url: 'https://github.com/aishwarya', label: 'GitHub' },
-        { icon: <FaEnvelope />, url: 'mailto:aishwarya@gmail.com', label: 'Email' },
+        { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/kandulanaveen1/', label: 'LinkedIn' },
+        { icon: <FaGithub />, url: 'https://github.com/Kandulanaveennaidu', label: 'GitHub' },
+        { icon: <FaEnvelope />, url: 'mailto:kandulanaveennaidu017@gmail.com', label: 'Email' },
     ];
 
     const handleChange = (e) => {
@@ -50,15 +58,45 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Simulate form submission
-        setStatus({ type: 'success', message: 'Thank you! Your message has been sent successfully.' });
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setIsLoading(true);
+        setStatus({ type: '', message: '' });
 
-        setTimeout(() => {
-            setStatus({ type: '', message: '' });
-        }, 5000);
+        try {
+            // EmailJS template parameters
+            const templateParams = {
+                from_name: formData.name,
+                from_email: formData.email,
+                subject: formData.subject,
+                message: formData.message,
+                to_name: 'Naveen Kandula',
+            };
+
+            await emailjs.send(
+                EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
+                templateParams,
+                EMAILJS_PUBLIC_KEY
+            );
+
+            setStatus({
+                type: 'success',
+                message: 'Thank you! Your message has been sent successfully. I will get back to you soon!'
+            });
+            setFormData({ name: '', email: '', subject: '', message: '' });
+        } catch (error) {
+            console.error('Error sending message:', error);
+            setStatus({
+                type: 'error',
+                message: 'Failed to send message. Please try again or contact me directly via email.'
+            });
+        } finally {
+            setIsLoading(false);
+            setTimeout(() => {
+                setStatus({ type: '', message: '' });
+            }, 8000);
+        }
     };
 
     return (
@@ -199,9 +237,22 @@ const Contact = () => {
                                     </div>
                                 </Form.Group>
 
-                                <button type="submit" className="btn-primary-custom submit-btn">
-                                    <FaPaperPlane className="me-2" />
-                                    Send Message
+                                <button
+                                    type="submit"
+                                    className={`btn-primary-custom submit-btn ${isLoading ? 'loading' : ''}`}
+                                    disabled={isLoading}
+                                >
+                                    {isLoading ? (
+                                        <>
+                                            <span className="spinner"></span>
+                                            Sending...
+                                        </>
+                                    ) : (
+                                        <>
+                                            <FaPaperPlane className="me-2" />
+                                            Send Message
+                                        </>
+                                    )}
                                 </button>
                             </Form>
                         </div>

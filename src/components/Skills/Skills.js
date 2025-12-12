@@ -24,45 +24,38 @@ const Skills = () => {
     ];
 
     const skills = [
-        // Backend
-        { name: 'Java', icon: <FaJava />, level: 95, category: 'backend', color: '#f89820' },
-        { name: 'Spring Boot', icon: <SiSpringboot />, level: 90, category: 'backend', color: '#6db33f' },
-        { name: 'Hibernate', icon: <SiHibernate />, level: 85, category: 'backend', color: '#59666c' },
-        { name: 'Python', icon: <FaPython />, level: 75, category: 'backend', color: '#3776ab' },
-        { name: 'Node.js', icon: <FaNodeJs />, level: 80, category: 'backend', color: '#68a063' },
-        { name: 'GraphQL', icon: <SiGraphql />, level: 75, category: 'backend', color: '#e535ab' },
-
         // Frontend
-        { name: 'React.js', icon: <FaReact />, level: 90, category: 'frontend', color: '#61dafb' },
-        { name: 'Angular', icon: <FaAngular />, level: 80, category: 'frontend', color: '#dd0031' },
-        { name: 'TypeScript', icon: <SiTypescript />, level: 85, category: 'frontend', color: '#3178c6' },
-        { name: 'JavaScript', icon: <FaJs />, level: 90, category: 'frontend', color: '#f7df1e' },
+        { name: 'React.js', icon: <FaReact />, level: 95, category: 'frontend', color: '#61dafb' },
+        { name: 'Redux', icon: <FaReact />, level: 90, category: 'frontend', color: '#764abc' },
+        { name: 'JavaScript', icon: <FaJs />, level: 92, category: 'frontend', color: '#f7df1e' },
         { name: 'HTML5', icon: <FaHtml5 />, level: 95, category: 'frontend', color: '#e34f26' },
         { name: 'CSS3', icon: <FaCss3Alt />, level: 90, category: 'frontend', color: '#1572b6' },
         { name: 'Bootstrap', icon: <SiBootstrap />, level: 90, category: 'frontend', color: '#7952b3' },
+        { name: 'Chart.js', icon: <FaJs />, level: 85, category: 'frontend', color: '#ff6384' },
+        { name: 'Java', icon: <FaJava />, level: 75, category: 'frontend', color: '#f89820' },
+        { name: '.NET', icon: <FaMicrosoft />, level: 70, category: 'frontend', color: '#512bd4' },
+
+        // Backend
+        { name: 'Node.js', icon: <FaNodeJs />, level: 90, category: 'backend', color: '#68a063' },
+        { name: 'Express.js', icon: <FaNodeJs />, level: 88, category: 'backend', color: '#000000' },
+        { name: 'RESTful APIs', icon: <SiGraphql />, level: 92, category: 'backend', color: '#e535ab' },
+        { name: 'WebRTC', icon: <FaNodeJs />, level: 85, category: 'backend', color: '#333333' },
 
         // Database
         { name: 'MySQL', icon: <SiMysql />, level: 90, category: 'database', color: '#4479a1' },
-        { name: 'PostgreSQL', icon: <SiPostgresql />, level: 85, category: 'database', color: '#336791' },
-        { name: 'MongoDB', icon: <SiMongodb />, level: 85, category: 'database', color: '#47a248' },
-        { name: 'Redis', icon: <SiRedis />, level: 80, category: 'database', color: '#dc382d' },
-        { name: 'Oracle', icon: <FaDatabase />, level: 80, category: 'database', color: '#f80000' },
+        { name: 'MongoDB', icon: <SiMongodb />, level: 75, category: 'database', color: '#47a248' },
 
         // DevOps & Cloud
-        { name: 'AWS', icon: <FaAws />, level: 85, category: 'devops', color: '#ff9900' },
-        { name: 'Azure', icon: <FaMicrosoft />, level: 80, category: 'devops', color: '#0078d4' },
-        { name: 'Docker', icon: <FaDocker />, level: 90, category: 'devops', color: '#2496ed' },
-        { name: 'Kubernetes', icon: <SiKubernetes />, level: 80, category: 'devops', color: '#326ce5' },
-        { name: 'Jenkins', icon: <FaJenkins />, level: 85, category: 'devops', color: '#d24939' },
-        { name: 'Terraform', icon: <SiTerraform />, level: 75, category: 'devops', color: '#7b42bc' },
-        { name: 'Linux', icon: <FaLinux />, level: 85, category: 'devops', color: '#fcc624' },
+        { name: 'Docker', icon: <FaDocker />, level: 88, category: 'devops', color: '#2496ed' },
+        { name: 'AWS S3', icon: <FaAws />, level: 85, category: 'devops', color: '#ff9900' },
+        { name: 'CI/CD', icon: <FaJenkins />, level: 85, category: 'devops', color: '#d24939' },
+        { name: 'Git', icon: <FaGitAlt />, level: 92, category: 'devops', color: '#f05032' },
 
         // Tools
-        { name: 'Git', icon: <FaGitAlt />, level: 95, category: 'tools', color: '#f05032' },
-        { name: 'Kafka', icon: <SiApachekafka />, level: 80, category: 'tools', color: '#231f20' },
-        { name: 'Jira', icon: <SiJira />, level: 90, category: 'tools', color: '#0052cc' },
-        { name: 'SonarQube', icon: <SiSonarqube />, level: 75, category: 'tools', color: '#4e9bcd' },
-        { name: 'Tomcat', icon: <SiApachetomcat />, level: 85, category: 'tools', color: '#f8dc75' },
+        { name: 'Figma', icon: <SiJira />, level: 85, category: 'tools', color: '#f24e1e' },
+        { name: 'Postman', icon: <SiJira />, level: 90, category: 'tools', color: '#ff6c37' },
+        { name: 'Jira', icon: <SiJira />, level: 88, category: 'tools', color: '#0052cc' },
+        { name: 'Agile', icon: <SiJira />, level: 90, category: 'tools', color: '#0052cc' },
     ];
 
     const filteredSkills = activeCategory === 'all'
@@ -124,34 +117,34 @@ const Skills = () => {
                             <h3>Core Competencies</h3>
                             <div className="competencies-grid">
                                 <div className="competency-item">
-                                    <div className="competency-icon">🏗️</div>
-                                    <h4>Microservices Architecture</h4>
-                                    <p>Designing and implementing scalable microservices using Spring Boot, Docker, and Kubernetes</p>
+                                    <div className="competency-icon">🎨</div>
+                                    <h4>Responsive Design</h4>
+                                    <p>Creating pixel-perfect, cross-browser-compatible interfaces with Bootstrap and custom CSS</p>
+                                </div>
+                                <div className="competency-item">
+                                    <div className="competency-icon">🔗</div>
+                                    <h4>API Integration</h4>
+                                    <p>Integrating third-party APIs including WhatsApp, SMS, Telegram for seamless communication</p>
                                 </div>
                                 <div className="competency-item">
                                     <div className="competency-icon">⚡</div>
-                                    <h4>RESTful API Development</h4>
-                                    <p>Building robust and secure REST APIs with proper documentation and best practices</p>
+                                    <h4>Performance Optimization</h4>
+                                    <p>Optimizing database queries and API endpoints, achieving 45% faster response times</p>
                                 </div>
                                 <div className="competency-item">
-                                    <div className="competency-icon">🎨</div>
-                                    <h4>Frontend Development</h4>
-                                    <p>Creating responsive and intuitive user interfaces using React.js and modern CSS frameworks</p>
-                                </div>
-                                <div className="competency-item">
-                                    <div className="competency-icon">☁️</div>
-                                    <h4>Cloud Solutions</h4>
-                                    <p>Deploying and managing applications on AWS and Azure with CI/CD pipelines</p>
+                                    <div className="competency-icon">🌐</div>
+                                    <h4>Cross-Browser Compatibility</h4>
+                                    <p>Ensuring seamless functionality across all desktop and mobile platforms</p>
                                 </div>
                                 <div className="competency-item">
                                     <div className="competency-icon">🔄</div>
                                     <h4>Agile Development</h4>
-                                    <p>Working effectively in Agile/Scrum environments with continuous delivery practices</p>
+                                    <p>Working effectively in Agile/Scrum environments with sprint planning and daily stand-ups</p>
                                 </div>
                                 <div className="competency-item">
-                                    <div className="competency-icon">🔒</div>
-                                    <h4>Security Best Practices</h4>
-                                    <p>Implementing OAuth, JWT authentication, and following OWASP security guidelines</p>
+                                    <div className="competency-icon">📹</div>
+                                    <h4>WebRTC Solutions</h4>
+                                    <p>Building real-time communication platforms supporting 50,000+ concurrent users</p>
                                 </div>
                             </div>
                         </div>

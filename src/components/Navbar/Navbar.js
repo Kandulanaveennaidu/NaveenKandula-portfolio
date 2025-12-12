@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Nav, Navbar as BootstrapNavbar } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import { FaHome, FaUser, FaCode, FaBriefcase, FaProjectDiagram, FaGraduationCap, FaCertificate, FaEnvelope } from 'react-icons/fa';
+import { FaHome, FaUser, FaCode, FaBriefcase, FaProjectDiagram, FaGraduationCap, FaCertificate, FaEnvelope, FaQuoteLeft, FaBlog } from 'react-icons/fa';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -23,8 +24,10 @@ const Navbar = () => {
         { name: 'Skills', to: 'skills', icon: <FaCode /> },
         { name: 'Experience', to: 'experience', icon: <FaBriefcase /> },
         { name: 'Projects', to: 'projects', icon: <FaProjectDiagram /> },
+        { name: 'Testimonials', to: 'testimonials', icon: <FaQuoteLeft /> },
         { name: 'Education', to: 'education', icon: <FaGraduationCap /> },
         { name: 'Certifications', to: 'certifications', icon: <FaCertificate /> },
+        { name: 'Blog', to: 'blog', icon: <FaBlog /> },
         { name: 'Contact', to: 'contact', icon: <FaEnvelope /> },
     ];
 
@@ -38,7 +41,7 @@ const Navbar = () => {
             <Container>
                 <BootstrapNavbar.Brand href="#hero" className="navbar-brand-custom">
                     <span className="brand-text">
-                        <span className="brand-highlight">A</span>ishwarya
+                        <span className="brand-highlight">N</span>aveen
                     </span>
                 </BootstrapNavbar.Brand>
 
@@ -68,6 +71,9 @@ const Navbar = () => {
                                 <span className="nav-text">{item.name}</span>
                             </Nav.Link>
                         ))}
+                        <div className="nav-theme-toggle">
+                            <ThemeToggle />
+                        </div>
                     </Nav>
                 </BootstrapNavbar.Collapse>
             </Container>
