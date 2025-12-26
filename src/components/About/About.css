@@ -218,6 +218,109 @@
   font-weight: 500;
 }
 
+/* Large Screen Enhancements */
+@media (min-width: 1400px) {
+  .about-avatar {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .about-initials {
+    font-size: 6.5rem;
+  }
+  
+  .about-greeting {
+    font-size: 2.5rem;
+  }
+  
+  .about-text {
+    font-size: 1.15rem;
+    max-width: 550px;
+  }
+  
+  .about-content {
+    padding-left: 60px;
+  }
+  
+  .experience-badge {
+    padding: 22px 30px;
+  }
+  
+  .exp-number {
+    font-size: 2.8rem;
+  }
+  
+  .highlight-item {
+    padding: 28px;
+  }
+  
+  .highlight-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 1.7rem;
+  }
+  
+  .highlight-content h4 {
+    font-size: 1.15rem;
+  }
+  
+  .stat-card {
+    padding: 45px 30px;
+  }
+  
+  .stat-icon {
+    font-size: 3rem;
+  }
+  
+  .stat-number {
+    font-size: 3rem;
+  }
+  
+  .stat-label {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .about-avatar {
+    width: 360px;
+    height: 360px;
+  }
+  
+  .about-initials {
+    font-size: 7rem;
+  }
+  
+  .about-greeting {
+    font-size: 2.8rem;
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  
+  .experience-badge {
+    padding: 25px 35px;
+  }
+  
+  .exp-number {
+    font-size: 3rem;
+  }
+  
+  .highlight-item {
+    padding: 32px;
+  }
+  
+  .stat-card {
+    padding: 50px 35px;
+  }
+  
+  .stat-number {
+    font-size: 3.5rem;
+  }
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .about-content {
@@ -266,13 +369,13 @@
   }
   
   .about-avatar {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     border-radius: 25px;
   }
   
   .about-initials {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   
   .highlights-grid {
@@ -364,13 +467,13 @@
 
 @media (max-width: 576px) {
   .about-avatar {
-    width: 180px;
-    height: 180px;
-    border-radius: 20px;
+    width: 220px;
+    height: 220px;
+    border-radius: 22px;
   }
   
   .about-initials {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
   
   .about-greeting {
@@ -429,12 +532,13 @@
 
 @media (max-width: 480px) {
   .about-avatar {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
   }
   
   .about-initials {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   
   .about-greeting {

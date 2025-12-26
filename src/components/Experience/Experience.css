@@ -231,6 +231,68 @@
   font-weight: 500;
 }
 
+/* Large Screen Enhancements */
+@media (min-width: 1400px) {
+  .timeline {
+    max-width: 1300px;
+    padding: 60px 0;
+  }
+  
+  .timeline-content {
+    padding: 45px;
+  }
+  
+  .timeline-role {
+    font-size: 1.7rem;
+  }
+  
+  .timeline-company {
+    font-size: 1.2rem;
+  }
+  
+  .timeline-description {
+    font-size: 1rem;
+  }
+  
+  .timeline-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .timeline-item {
+    padding: 25px 60px;
+  }
+  
+  .timeline-item::before {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .timeline-line {
+    width: 5px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .timeline {
+    max-width: 1500px;
+    padding: 80px 0;
+  }
+  
+  .timeline-content {
+    padding: 50px;
+  }
+  
+  .timeline-role {
+    font-size: 1.8rem;
+  }
+  
+  .timeline-item {
+    padding: 30px 80px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .timeline-line {

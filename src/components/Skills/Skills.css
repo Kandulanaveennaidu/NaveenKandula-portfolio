@@ -165,6 +165,85 @@
   line-height: 1.6;
 }
 
+/* Large Screen Enhancements */
+@media (min-width: 1400px) {
+  .filter-btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+  
+  .skill-card {
+    padding: 35px;
+  }
+  
+  .skill-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 1.8rem;
+  }
+  
+  .skill-info h4 {
+    font-size: 1.2rem;
+  }
+  
+  .skill-level {
+    font-size: 1.05rem;
+  }
+  
+  .skills-summary {
+    padding: 55px 50px;
+  }
+  
+  .skills-summary h3 {
+    font-size: 2rem;
+  }
+  
+  .competency-item {
+    padding: 30px;
+  }
+  
+  .competency-icon {
+    font-size: 3rem;
+  }
+  
+  .competency-item h4 {
+    font-size: 1.2rem;
+  }
+  
+  .competency-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .filter-btn {
+    padding: 16px 35px;
+    font-size: 1.05rem;
+  }
+  
+  .skill-card {
+    padding: 40px;
+  }
+  
+  .skill-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+  
+  .skills-summary {
+    padding: 65px 60px;
+  }
+  
+  .competencies-grid {
+    gap: 25px;
+  }
+  
+  .competency-item {
+    padding: 35px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .competencies-grid {
