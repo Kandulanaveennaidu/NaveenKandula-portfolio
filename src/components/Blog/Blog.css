@@ -165,17 +165,159 @@
 }
 
 /* Responsive */
+@media (max-width: 992px) {
+  .blog-card {
+    margin-bottom: 25px;
+  }
+  
+  .blog-image {
+    height: 190px;
+  }
+  
+  .blog-title {
+    font-size: 1.15rem;
+  }
+  
+  .blog-cta {
+    padding: 35px 30px;
+  }
+}
+
 @media (max-width: 768px) {
-    .blog-image {
-        height: 180px;
-    }
+  .blog-card {
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-image {
+    height: 180px;
+  }
+  
+  .blog-category {
+    top: 12px;
+    left: 12px;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
 
-    .blog-title {
-        font-size: 1.1rem;
-    }
+  .blog-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog-excerpt {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
 
-    .blog-meta {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+  .blog-meta {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .blog-meta .meta-item {
+    font-size: 0.8rem;
+  }
+  
+  .blog-link {
+    font-size: 0.9rem;
+  }
+  
+  .blog-cta {
+    margin-top: 30px;
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+  
+  .blog-cta p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-card {
+    border-radius: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .blog-image {
+    height: 160px;
+  }
+  
+  .blog-category {
+    top: 10px;
+    left: 10px;
+    padding: 3px 10px;
+    font-size: 0.7rem;
+  }
+  
+  .blog-content {
+    padding: 18px;
+  }
+
+  .blog-title {
+    font-size: 1rem;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+  
+  .blog-excerpt {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    margin-bottom: 12px;
+  }
+  
+  .blog-meta .meta-item {
+    font-size: 0.75rem;
+    gap: 4px;
+  }
+  
+  .blog-link {
+    font-size: 0.85rem;
+  }
+  
+  .blog-cta {
+    padding: 25px 15px;
+  }
+  
+  .blog-cta p {
+    font-size: 0.95rem;
+  }
+  
+  .placeholder-icon {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-image {
+    height: 140px;
+  }
+  
+  .blog-content {
+    padding: 15px;
+  }
+  
+  .blog-title {
+    font-size: 0.95rem;
+  }
+  
+  .blog-excerpt {
+    font-size: 0.8rem;
+  }
+  
+  .blog-cta {
+    padding: 20px 12px;
+  }
+  
+  .blog-cta p {
+    font-size: 0.9rem;
+  }
 }

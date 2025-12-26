@@ -174,19 +174,184 @@
   .skills-summary {
     padding: 40px 30px;
   }
+  
+  .skills-summary h3 {
+    font-size: 1.6rem;
+  }
+  
+  .competency-item {
+    padding: 20px 15px;
+  }
+  
+  .competency-icon {
+    font-size: 2.2rem;
+  }
+  
+  .competency-item h4 {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
   .competencies-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
 
   .skills-filter {
     gap: 10px;
+    padding: 0 10px;
   }
 
   .filter-btn {
-    padding: 10px 20px;
+    padding: 10px 18px;
     font-size: 0.85rem;
+  }
+  
+  .skills-summary {
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+  
+  .skills-summary h3 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+  
+  .competency-item {
+    padding: 18px 12px;
+    border-radius: 12px;
+  }
+  
+  .competency-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  
+  .competency-item h4 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+  
+  .competency-item p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  .skill-card {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+  
+  .skill-header {
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .skill-info h4 {
+    font-size: 1rem;
+  }
+  
+  .skill-level {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .competencies-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .skills-filter {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    flex: 0 0 auto;
+  }
+  
+  .skills-summary {
+    padding: 25px 15px;
+  }
+  
+  .skills-summary h3 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  
+  .competency-item {
+    padding: 15px;
+  }
+  
+  .competency-icon {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .competency-item h4 {
+    font-size: 0.9rem;
+  }
+  
+  .competency-item p {
+    font-size: 0.8rem;
+  }
+  
+  .skill-card {
+    padding: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .skill-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+  }
+  
+  .skill-info h4 {
+    font-size: 0.95rem;
+  }
+  
+  .skill-level {
+    font-size: 0.85rem;
+  }
+  
+  .skill-progress .progress {
+    height: 6px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-btn {
+    padding: 7px 12px;
+    font-size: 0.75rem;
+  }
+  
+  .skill-card {
+    padding: 15px;
+  }
+  
+  .skill-header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
   }
 }

@@ -75,7 +75,7 @@ const Hero = () => {
                         </h2>
 
                         <p className="hero-description">
-                            Dynamic React.js Full Stack Developer with 3+ years of experience specializing in React.js, Node.js, and modern web technologies.
+                            Dynamic Full Stack Developer with 3+ years of experience specializing in React.js, Node.js, and modern web technologies.
                             I architect scalable applications and deliver user-centric solutions that improve operational efficiency by up to 45%.
                         </p>
 

@@ -181,28 +181,73 @@
 }
 
 /* Responsive */
+@media (max-width: 992px) {
+  .cert-card {
+    padding: 25px;
+  }
+  
+  .cert-name {
+    font-size: 1.1rem;
+  }
+  
+  .cert-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 768px) {
   .cert-card {
     flex-direction: column;
     text-align: center;
-    padding: 25px;
+    padding: 22px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    gap: 15px;
   }
 
   .cert-icon-wrapper {
     display: flex;
     justify-content: center;
   }
+  
+  .cert-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
 
   .cert-meta {
     justify-content: center;
+    gap: 12px;
+  }
+  
+  .cert-meta .meta-item {
+    font-size: 0.8rem;
   }
 
   .cert-skills {
     justify-content: center;
+    gap: 6px;
+  }
+  
+  .skill-tag {
+    padding: 4px 10px;
+    font-size: 0.7rem;
   }
 
   .cert-link {
     justify-content: center;
+  }
+  
+  .cert-name {
+    font-size: 1.1rem;
+  }
+  
+  .cert-issuer {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
   }
 
   .cert-badge {
@@ -211,5 +256,116 @@
 
   .additional-certs {
     padding: 30px 20px;
+    border-radius: 16px;
+  }
+  
+  .additional-certs h3 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+  
+  .certs-list {
+    gap: 12px;
+  }
+  
+  .cert-item {
+    padding: 12px 18px;
+    font-size: 0.85rem;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cert-card {
+    padding: 18px;
+    border-radius: 14px;
+    gap: 12px;
+  }
+  
+  .cert-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    border-radius: 12px;
+  }
+  
+  .cert-name {
+    font-size: 1rem;
+  }
+  
+  .cert-issuer {
+    font-size: 0.9rem;
+  }
+  
+  .cert-meta {
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cert-meta .meta-item {
+    font-size: 0.75rem;
+  }
+  
+  .cert-skills {
+    gap: 5px;
+    margin-bottom: 12px;
+  }
+  
+  .skill-tag {
+    padding: 3px 8px;
+    font-size: 0.65rem;
+  }
+  
+  .cert-link {
+    font-size: 0.85rem;
+  }
+
+  .additional-certs {
+    padding: 25px 15px;
+  }
+  
+  .additional-certs h3 {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+  }
+  
+  .certs-list {
+    gap: 10px;
+  }
+  
+  .cert-item {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+  
+  .cert-item-icon {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-card {
+    padding: 15px;
+  }
+  
+  .cert-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+  
+  .cert-name {
+    font-size: 0.95rem;
+  }
+  
+  .cert-issuer {
+    font-size: 0.85rem;
+  }
+  
+  .cert-item {
+    padding: 8px 12px;
+    font-size: 0.75rem;
   }
 }

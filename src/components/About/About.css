@@ -233,18 +233,219 @@
   .about-initials {
     font-size: 4.5rem;
   }
+  
+  .about-greeting {
+    font-size: 1.8rem;
+  }
+  
+  .highlights-grid {
+    gap: 15px;
+  }
+  
+  .highlight-item {
+    padding: 18px;
+  }
+  
+  .stat-card {
+    padding: 30px 20px;
+  }
+  
+  .stat-number {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .about-content {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .about-image-wrapper {
+    justify-content: center;
+  }
+  
+  .about-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+  }
+  
+  .about-initials {
+    font-size: 4rem;
+  }
+  
   .highlights-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .about-greeting {
     font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .about-text {
+    font-size: 0.95rem;
+    text-align: center;
   }
 
   .experience-badge {
+    right: -10px;
+    bottom: -15px;
+    padding: 15px 20px;
+  }
+  
+  .exp-number {
+    font-size: 2rem;
+  }
+  
+  .exp-text {
+    font-size: 0.8rem;
+  }
+  
+  .highlight-item {
+    padding: 15px;
+    gap: 12px;
+  }
+  
+  .highlight-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+  }
+  
+  .highlight-content h4 {
+    font-size: 0.95rem;
+  }
+  
+  .highlight-content p {
+    font-size: 0.8rem;
+  }
+  
+  .stats-row {
+    margin-top: 40px;
+  }
+  
+  .stat-card {
+    padding: 25px 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+  }
+  
+  .stat-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  
+  .stat-label {
+    font-size: 0.85rem;
+  }
+  
+  .about-shape-1 {
+    width: 150px;
+    height: 150px;
+    top: -20px;
+    left: -20px;
+  }
+  
+  .about-shape-2 {
+    width: 80px;
+    height: 80px;
+    right: -30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+  }
+  
+  .about-initials {
+    font-size: 3.5rem;
+  }
+  
+  .about-greeting {
+    font-size: 1.3rem;
+  }
+  
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  
+  .experience-badge {
     right: 0;
+    bottom: -10px;
+    padding: 12px 16px;
+  }
+  
+  .exp-number {
+    font-size: 1.8rem;
+  }
+  
+  .highlight-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px;
+  }
+  
+  .stat-card {
+    padding: 20px 15px;
+  }
+  
+  .stat-icon {
+    font-size: 1.8rem;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .about-shape-1 {
+    width: 120px;
+    height: 120px;
+    opacity: 0.15;
+  }
+  
+  .about-shape-2 {
+    width: 60px;
+    height: 60px;
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-avatar {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .about-initials {
+    font-size: 3rem;
+  }
+  
+  .about-greeting {
+    font-size: 1.2rem;
+  }
+  
+  .stat-card {
+    padding: 18px 12px;
+  }
+  
+  .stat-number {
+    font-size: 1.6rem;
   }
 }

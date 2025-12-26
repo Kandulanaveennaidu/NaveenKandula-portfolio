@@ -3,6 +3,9 @@
   min-height: 100vh;
   opacity: 0;
   transition: opacity 0.5s ease;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
 }
 
 .App.loaded {
@@ -305,4 +308,43 @@ section[id] {
 
 [data-theme="light"] .btn-close {
   filter: none;
+}
+
+/* Mobile Responsive Improvements */
+@media (max-width: 768px) {
+  /* Adjust scroll offset for smaller navbar */
+  section[id] {
+    scroll-margin-top: 70px;
+  }
+  
+  /* Improve touch targets */
+  .nav-link-custom,
+  .social-link,
+  .filter-btn,
+  .project-link,
+  .cert-link {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@media (max-width: 576px) {
+  section[id] {
+    scroll-margin-top: 60px;
+  }
+  
+  /* Smaller scrollbar on mobile */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  section[id] {
+    scroll-margin-top: 55px;
+  }
 }

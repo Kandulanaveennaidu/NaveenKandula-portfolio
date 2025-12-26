@@ -132,6 +132,96 @@
     margin-top: 15px;
     padding: 10px 20px;
   }
+  
+  .navbar-brand-custom {
+    font-size: 1.5rem;
+  }
+  
+  .brand-highlight {
+    font-size: 1.8rem;
+  }
+  
+  .custom-navbar {
+    padding: 15px 0;
+  }
+  
+  .custom-navbar.scrolled {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand-custom {
+    font-size: 1.3rem;
+  }
+  
+  .brand-highlight {
+    font-size: 1.5rem;
+  }
+  
+  .custom-navbar {
+    padding: 12px 0;
+  }
+  
+  .navbar-collapse {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 12px;
+  }
+  
+  .nav-link-custom {
+    padding: 12px 15px !important;
+  }
+  
+  .nav-icon {
+    font-size: 0.9rem;
+  }
+  
+  .nav-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-navbar {
+    padding: 10px 0;
+  }
+  
+  .navbar-brand-custom {
+    font-size: 1.2rem;
+  }
+  
+  .brand-highlight {
+    font-size: 1.4rem;
+  }
+  
+  .navbar-collapse {
+    padding: 12px;
+  }
+  
+  .nav-link-custom {
+    padding: 10px 12px !important;
+    font-size: 0.9rem;
+  }
+  
+  .toggler-icon {
+    width: 22px;
+    height: 2px;
+  }
+  
+  .toggler-icon::before,
+  .toggler-icon::after {
+    width: 22px;
+    height: 2px;
+  }
+  
+  .toggler-icon::before {
+    top: -7px;
+  }
+  
+  .toggler-icon::after {
+    bottom: -7px;
+  }
 }
 
 /* Theme Toggle in Navbar */
@@ -139,4 +229,11 @@
   display: flex;
   align-items: center;
   margin-left: 15px;
+}
+
+@media (max-width: 991px) {
+  .nav-theme-toggle {
+    margin-left: 0;
+    justify-content: center;
+  }
 }

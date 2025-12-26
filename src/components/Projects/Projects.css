@@ -294,12 +294,245 @@
 }
 
 /* Responsive */
+@media (max-width: 992px) {
+  .project-image {
+    height: 200px;
+  }
+  
+  .project-content {
+    padding: 22px;
+  }
+  
+  .project-title {
+    font-size: 1.2rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .projects-filter {
+    gap: 10px;
+    padding: 0 10px;
+  }
+  
+  .project-card {
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+  
+  .project-content {
+    padding: 20px;
+  }
+  
+  .project-category {
+    font-size: 0.7rem;
+    padding: 4px 12px;
+    margin-bottom: 12px;
+  }
+  
+  .project-title {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+  
+  .project-desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .project-tech {
+    gap: 6px;
+    margin-bottom: 15px;
+  }
+  
+  .tech-badge {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    border-radius: 12px;
+  }
+  
+  .project-links {
+    gap: 12px;
+    padding-top: 12px;
+  }
+  
+  .project-link {
+    font-size: 0.85rem;
+    gap: 6px;
+  }
+
   .modal-links {
     flex-direction: column;
   }
 
   .modal-links a {
     justify-content: center;
+  }
+  
+  .project-modal .modal-header {
+    padding: 20px;
+  }
+  
+  .project-modal .modal-title {
+    font-size: 1.2rem;
+  }
+  
+  .project-modal .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  
+  .modal-section h5 {
+    font-size: 1rem;
+  }
+  
+  .modal-tech .tech-badge {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .modal-features li {
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-filter {
+    gap: 8px;
+  }
+  
+  .project-card {
+    border-radius: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .project-image {
+    height: 160px;
+  }
+  
+  .project-content {
+    padding: 18px;
+  }
+  
+  .project-category {
+    font-size: 0.65rem;
+    padding: 3px 10px;
+  }
+  
+  .project-title {
+    font-size: 1.05rem;
+  }
+  
+  .project-desc {
+    font-size: 0.82rem;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+  
+  .project-tech {
+    gap: 5px;
+    margin-bottom: 12px;
+  }
+  
+  .tech-badge {
+    padding: 3px 8px;
+    font-size: 0.65rem;
+  }
+  
+  .project-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .project-link {
+    font-size: 0.8rem;
+  }
+  
+  .overlay-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+  
+  .project-modal .modal-header {
+    padding: 15px;
+  }
+  
+  .project-modal .modal-title {
+    font-size: 1.1rem;
+    gap: 10px;
+  }
+  
+  .modal-project-img {
+    width: 40px;
+    height: 28px;
+  }
+  
+  .project-modal .modal-body {
+    padding: 15px;
+  }
+  
+  .modal-description {
+    font-size: 0.9rem;
+  }
+  
+  .modal-section {
+    margin-bottom: 20px;
+  }
+  
+  .modal-section h5 {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+  
+  .modal-tech {
+    gap: 8px;
+  }
+  
+  .modal-tech .tech-badge {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+  
+  .modal-features li {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  
+  .modal-links {
+    margin-top: 20px;
+    padding-top: 15px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-image {
+    height: 140px;
+  }
+  
+  .project-content {
+    padding: 15px;
+  }
+  
+  .project-title {
+    font-size: 1rem;
+  }
+  
+  .project-desc {
+    font-size: 0.8rem;
+  }
+  
+  .tech-badge {
+    font-size: 0.6rem;
+    padding: 2px 6px;
   }
 }
